@@ -1,0 +1,60 @@
+.btn {
+  background-color: var(--white);
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px var(--black-quarter);
+  color: var(--black);
+  display: inline-block;
+  font-size: var(--font-sm);
+  font-weight: 500;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: .25s box-shadow, .25s background-color;
+
+  &:hover,
+  &:focus {
+    background-color: var(--light-grey);
+  }
+
+  &:active {
+    box-shadow: 0 0 8px var(--black-half);
+  }
+}
+
+.clients {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, 25%);
+  }
+
+  &__col {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  &__logo {
+    height: auto;
+    max-height: 100px;
+    max-width: 100%;
+    opacity: .75;
+  }
+}
+
+.footer {
+  @include mq(md) {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.logo {
+  height: auto;
+  width: 48px;
+
+  @include mq(md) {
+    margin-right: 20px;
+  }
+}

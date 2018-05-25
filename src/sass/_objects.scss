@@ -1,0 +1,33 @@
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0 30px;
+}
+
+.section {
+  padding: 50px 0;
+
+  @include mq(md) {
+    padding: 100px;
+  }
+
+  &--angle-down {
+    clip-path: polygon(100% 0, 100% 85%, 80% 100%, 0% 90%, 0 0);
+  }
+
+  &--angle-up {
+    clip-path: polygon(41% 0, 100% 4%, 100% 100%, 0 100%, 0 11%);
+  }
+
+  &--angle-both {
+    clip-path: polygon(40% 0, 100% 5%, 100% 83%, 91% 100%, 0 88%, 0 11%);
+  }
+
+  &--seafoam {
+    background-color: var(--seafoam);
+  }
+
+  &--ocean {
+    background-color: var(--ocean);
+  }
+}
