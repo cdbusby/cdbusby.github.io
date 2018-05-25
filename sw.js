@@ -1,4 +1,4 @@
-var cacheName = 'colinbusby:0001';
+var cacheName = 'colinbusby:0002';
 var cacheFiles = [
   '/index.html',
   '/assets/style.css',
