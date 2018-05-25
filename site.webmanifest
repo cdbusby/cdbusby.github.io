@@ -1,7 +1,13 @@
 {
+    "name": "Colin Busby",
+    "short_name": "Colin Busby",
+    "description": "I build sites in Wordpress, Drupal, and even static sites. I love to write really nice CSS, play around with ES6 and even love the pain of webpack configuration.",
+    "background_color": "#fff",
+    "theme_color": "#a0d6b4",
+    "display": "standalone",
     "icons": [{
         "src": "icon.png",
-        "sizes": "192x192",
+        "sizes": "512x512",
         "type": "image/png"
     }],
     "start_url": "/"

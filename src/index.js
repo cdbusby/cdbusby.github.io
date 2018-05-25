@@ -1,5 +1,10 @@
 import './sass/style.scss';
 
+// Init Service Worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+
 (function() {
 
   // Selectors
