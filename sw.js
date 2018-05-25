@@ -33,7 +33,7 @@ self.addEventListener('fetch', function(event) {
 // Empty out any caches that don’t match the ones listed.
 self.addEventListener('activate', function(event) {
 
-  var cacheWhitelist = ['colinbusby:0001'];
+  var cacheWhitelist = ['colinbusby:0002'];
 
   event.waitUntil(
       caches.keys().then(function(cacheNames) {
