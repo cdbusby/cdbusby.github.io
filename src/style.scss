@@ -9,15 +9,23 @@ $mq-breakpoints: (
 
 :root {
   --main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-lg: 3rem;
-  --font-md: 1.4rem;
-  --font-sm: 1.2rem;
+  --font-lg: 2rem;
+  --font-md: 1.2rem;
+  --font-sm: 1.1rem;
   --font-default: 1rem;
   --light-grey: #eee;
   --seafoam: #a0d6b4;
   --ocean: #94d5d7;
   --text: #333;
+
+  @include mq(md) {
+    --font-lg: 3rem;
+    --font-md: 1.4rem;
+    --font-sm: 1.2rem;
+    --font-default: 1rem;
+  }
 }
+
 
 body {
   color: var(--text);
@@ -41,6 +49,7 @@ h1 {
 p {
   font-size: var(--font-default);
   font-weight: 400;
+  line-height: 1.4;
 }
 
 .txt--lg {
@@ -75,12 +84,10 @@ p {
 }
 
 .section {
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding: 50px 0;
 
   @include mq(md) {
-    padding-bottom: 100px;
-    padding-top: 100px;
+    padding: 100px;
   }
 
   &--angle-down {
@@ -106,10 +113,10 @@ p {
 
 .clients {
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 50%);
 
   @include mq(md) {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 25%);
   }
 }
 
@@ -125,12 +132,4 @@ p {
   max-height: 100px;
   max-width: 100%;
   opacity: 0.75;
-}
-
-.footer {
-  margin-top: 50px;
-
-  @include mq(md) {
-    margin-top: 100px;
-  }
 }
