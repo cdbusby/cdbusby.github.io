@@ -28,44 +28,49 @@ Happy building.
 
     <link rel="preload" href="assets/style.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="assets/style.css"></noscript>
+    <script>
+      !function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+    </script>
 </head>
 
 <body>
 
-<section class="section section--seafoam section--angle-down">
-    <div class="container">
-        <h1>I'm Colin Busby, <span>a Web Developer from Halifax, Nova Scotia.</span></h1>
-        <p class="txt--lg">I build sites in Wordpress, Drupal, and even static sites. I love to write really nice CSS, play around with ES6 and even love the pain of webpack configuration.</p>
-    </div>
-</section>
+<main role="main">
+    <section class="section section--seafoam section--angle-down">
+        <div class="container">
+            <h1>I'm Colin Busby, <span>a Web Developer from Halifax, Nova Scotia.</span></h1>
+            <p class="txt--lg">I build sites in Wordpress, Drupal, and even static sites. I love to write really nice CSS, play around with ES6 and even love the pain of webpack configuration.</p>
+        </div>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <p class="txt--lg">I work with some <em>really</em> awesome clients.</p>
+    <section class="section">
+        <div class="container">
+            <p class="txt--lg">I work with some <em>really</em> awesome clients.</p>
 
-        <div class="clients">
-            <div class="clients__col">
-                <img src="img/client-fiiine.png" alt="Fiiine.style" class="clients__logo">
-            </div>
-            <div class="clients__col">
-                <img src="img/client-proedge.png" alt="ProEdge Sports Conditioning" class="clients__logo">
-            </div>
-            <div class="clients__col">
-                <img src="img/client-dose.png" alt="Dose" class="clients__logo">
-            </div>
-            <div class="clients__col">
-                <img src="img/client-bb.png" alt="Benjamin Bridge" class="clients__logo">
+            <div class="clients">
+                <div class="clients__col">
+                    <img src="img/client-fiiine.png" alt="Fiiine.style" class="clients__logo">
+                </div>
+                <div class="clients__col">
+                    <img src="img/client-proedge.png" alt="ProEdge Sports Conditioning" class="clients__logo">
+                </div>
+                <div class="clients__col">
+                    <img src="img/client-dose.png" alt="Dose" class="clients__logo">
+                </div>
+                <div class="clients__col">
+                    <img src="img/client-bb.png" alt="Benjamin Bridge" class="clients__logo">
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section section--ocean section--angle-both">
-    <div class="container">
-        <p class="txt--lg">If you want to work with me, I'd love to hear from you. Instead of making you fill out an annoying form, how about you just send me an email instead?</p>
-        <p><a href="mailto:info@colinbusby.com" class="btn">info@colinbusby.com</a></p>
-    </div>
-</section>
+    <section class="section section--ocean section--angle-both">
+        <div class="container">
+            <p class="txt--lg">If you want to work with me, I'd love to hear from you. Instead of making you fill out an annoying form, how about you just send me an email instead?</p>
+            <p><a href="mailto:info@colinbusby.com" class="btn">info@colinbusby.com</a></p>
+        </div>
+    </section>
+</main>
 
 <footer class="section">
     <div class="container">
